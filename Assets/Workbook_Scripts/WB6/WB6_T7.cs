@@ -11,12 +11,18 @@ public class WB6_T7 : MonoBehaviour
     void Start()
     {
         // == means Equal To 
-        if (ammoCount < 0)
+        if (ammoCount > 0)
         {
-            Debug.Log("You're out! You need to find some ammo!");
-
+            // -= subtracts a value from the Variable, in this case 1, and then assigns the result into the Variable. This is called an Arithmatic Assignment operator. 
+            Debug.Log("Bang! You fired a shot!");
+            ammoCount -= 1;
         }
-  
+        else if (ammoCount == 0)
+        {
+            ammoCount += 1;
+            Debug.Log("You're out! Find some ammo!");
+        }
+   
     }
 
 

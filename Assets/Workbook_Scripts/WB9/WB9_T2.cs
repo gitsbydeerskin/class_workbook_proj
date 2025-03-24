@@ -12,7 +12,7 @@ public class WB9_T2 : MonoBehaviour
     // Create function here 
     int MultiplyNumbers(int a, int b) 
     { 
-       return a *b;
+       return a * b;
     }
     
 }
